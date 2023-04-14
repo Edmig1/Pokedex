@@ -1,0 +1,203 @@
+:root {
+    --cor-principal: #EF233C;
+    --cor-fundo: #F4F4F4;
+    --cor-fundodivs: #ECECEC;
+    --cor-txt: #FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+/* -------------------------------header-------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-principal);
+    height: 120px;
+}
+
+nav {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav a {
+    font-size: 20px;
+    margin-left: 20px;
+    color: var(--cor-txt);
+}
+nav img{
+    padding-left: 20px;
+}
+header figure img{
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--cor-fundodivs);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#enviar img{
+    width: 20px;
+}
+
+#enviar{
+    width: 70px;
+    border: none;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: var(--cor-principal);
+
+}
+#lupa{
+    width: 15px;
+    padding-left: 10px;
+
+}
+
+#form button{
+    align-self: flex-end;
+}
+
+#form input{
+    width: 470px;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    height: px;
+    outline: none;
+}
+
+#form{
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+#rest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+    margin-top: 20px;
+}
+#pokeday, #pokemais{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 320px;
+    background-color: var(--cor-fundodivs);
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#pokay-saiba {
+    background-color: var(--cor-fundodivs);
+}
+
+#pokemais img{
+    width: 300px;
+}
+
+#pokeday-img {
+    height: 100px;
+}
+
+#pokemais-txt{
+    margin-top: 20px;
+}
+
+#pokemais-txt span{
+    color: var(--cor-principal);
+    font-size: xx-large;
+
+}
+#pokemais-txt p{
+    font-size: larger;
+}
+
+#pokeday{
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.pokeday-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#txt-day{
+    justify-self: flex-start;
+    margin: 20px;
+    font-size: large;
+}
+#pokeday-btn{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: px;
+    border-radius: 15px;
+    height: fit-content;
+    align-items: end;
+    padding: 8px;
+}
+#pokeday-btn button{
+    background-color: var(--cor-principal);
+    color: #fff;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: larger;
+}
+.fechado{
+    display: none;
+}
+
+.aberto{
+    display: block;
+}
+
+#poke-info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+}
+
+.pquenadiv{
+    background-color: var(--cor-fundodivs);
+    margin: 12px;
+    border-radius: 12px;
+    border: solid 1px black;
+
+}
+
+.pokemon-p{
+    border: solid 1px black;
+    border-radius: 12px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-p img{
+    height: 1.5rem;
+}
